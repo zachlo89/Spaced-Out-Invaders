@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.Spaced Out Invaders.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\work\gDevHq\ProfessionalUnityDevProgram\UnityProjects\Spaced Out Invaders\.idea\.idea.Spaced Out Invaders\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
