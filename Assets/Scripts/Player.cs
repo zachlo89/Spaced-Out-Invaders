@@ -17,6 +17,11 @@ public class Player : MonoBehaviour
     
     void Update() // called once per fr; 60 fr/sec
     {
+        PlayerMovement();
+    }
+    
+    void PlayerMovement()
+    {
         float horizInput = Input.GetAxis("Horizontal");
         float vertInput = Input.GetAxis("Vertical");
         
@@ -27,11 +32,15 @@ public class Player : MonoBehaviour
         Vector3 direction = new Vector3(horizInput, vertInput, 0);
         transform.Translate(direction * _speed * Time.deltaTime);
 
-        // if player pos on y is > 0 
-        // y pos = 0
-        if (transform.position.y >= 0)
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.5f, 0), 0);
+        
+        if (transform.position.x < -11.3f)
         {
-            transform.position = new Vector3(transform.position.x, 0, transform.position.z); // get curr x and z values y is 0
+            transform.position = new Vector3(11.3f, transform.position.y, 0);
+        }
+        else if (transform.position.x > 11.3f)
+        {
+            transform.position = new Vector3(-11.3f, transform.position.y, 0);
         }
     }
 }
