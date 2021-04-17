@@ -22,8 +22,8 @@ public class Player : MonoBehaviour
     
     void PlayerMovement()
     {
-        float horizInput = Input.GetAxis("Horizontal");
-        float vertInput = Input.GetAxis("Vertical");
+        float horizInput = Input.GetAxisRaw("Horizontal");
+        float vertInput = Input.GetAxisRaw("Vertical");
         
         // transform.Translate(new Vector3(1, 0, 0) * _speed * realTime); // 1m to right at 60m/sec
         // transform.Translate(Vector3.right * horizInput * _speed *Time.deltaTime);
