@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float horizInput;
-    public float vertInput;
+    private float horizInput;
+    private float vertInput;
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _laserPrefab;
     [SerializeField] private float _laserOffsetAmt = 0.9f;
     [SerializeField] private float _fireRate = 0.15f;
     [SerializeField] private float _canFire = 0.0f;
+    [SerializeField] private int _lives = 3;
     
     
     void Start()
@@ -60,5 +61,15 @@ public class Player : MonoBehaviour
 
         _canFire = Time.time + _fireRate;
         Instantiate(_laserPrefab, transform.position + _laserOffset, Quaternion.identity);
+    }
+
+    public void DamageTaken()
+    {
+        _lives -= 1;
+        
+        if (_lives < 1)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
