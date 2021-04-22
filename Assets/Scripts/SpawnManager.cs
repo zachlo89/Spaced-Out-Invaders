@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject _enemyPrefab;
     
-    void Update()
+    void Start()
     {
         StartCoroutine(SpawnRoutine());
     }
     
-    // spawn game objects every 5 seconds
+    void Update()
+    {
+        
+    }
+    
     IEnumerator SpawnRoutine()
     {
-        yield return new WaitForSeconds(5);
+        while (true)
+        {
+            Vector3 posToSpawn = new Vector3(Random.Range(-8f, 8f), 7, 0);
+            Instantiate(_enemyPrefab, posToSpawn, Quaternion.identity);
+            yield return new WaitForSeconds(5);
+        }
     }
 }

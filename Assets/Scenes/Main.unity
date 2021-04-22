@@ -231,6 +231,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8676865648358088754, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8676865648358088755, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
         type: 3}
       propertyPath: m_IsTrigger
@@ -310,6 +315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676865648358088754, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8676865648358088755, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
         type: 3}
@@ -402,6 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e1efd9a5cd342c4881cc1e7523ea796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemyPrefab: {fileID: 8676865648358088754, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
+    type: 3}
 --- !u!4 &1674905090
 Transform:
   m_ObjectHideFlags: 0
@@ -585,6 +597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676865648358088754, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8676865648358088755, guid: 6419f7e6b66ab014eb4287f3dc11f81e,
         type: 3}
