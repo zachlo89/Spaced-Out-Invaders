@@ -6,6 +6,7 @@ using UnityEngine;
 public class ScrollBG : MonoBehaviour
 {
     private MeshRenderer _mRenderer;
+    [SerializeField] private float _speed;
     
     void Start()
     {
@@ -20,7 +21,7 @@ public class ScrollBG : MonoBehaviour
     {
         Material mat = _mRenderer.material;
         Vector2 offset = mat.mainTextureOffset;
-        offset.y += Time.deltaTime;
+        offset.y += Time.deltaTime * _speed;
         mat.mainTextureOffset = offset;
     }
 }
