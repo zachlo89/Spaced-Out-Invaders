@@ -108,8 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
-  _player: {fileID: 1995242206785590609, guid: 2e6a8ba5aae8f36409661aee4f05d5f5, type: 3}
-  _laserPrefab: {fileID: 1487275211103731871, guid: 572127254b704764cbb9662bd3cc5317,
+  _laserPrefab: {fileID: 1598006602938260526, guid: 572127254b704764cbb9662bd3cc5317,
     type: 3}
 --- !u!54 &2844967787310022498
 Rigidbody:
