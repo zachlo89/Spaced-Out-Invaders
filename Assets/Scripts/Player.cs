@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
         
         if (_lives < 1)
         {
+            // comm w/ spawn manager to stop spawning
             Destroy(this.gameObject);
         }
     }
