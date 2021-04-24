@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private int _speed = 5;
+    [SerializeField] private int _speed;
     [SerializeField] private GameObject _laserPrefab;
     
     void Start()
@@ -25,8 +25,8 @@ public class Enemy : MonoBehaviour
             transform.position = new Vector3((Random.Range(-9, 9)), 8, 0);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
