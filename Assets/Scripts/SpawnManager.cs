@@ -8,8 +8,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] GameObject _enemyContainer;
     
     private bool _stopSpawning = false;
-    
-    
+
+    private GameObject _projectilePrefab;
     void Start()
     {
         StartCoroutine(SpawnRoutine());
