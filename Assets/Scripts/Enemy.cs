@@ -10,10 +10,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _speed;
     [SerializeField] private GameObject _laserPrefab;
     
-    void Start()
-    {
-        
-    }
     
     void Update()
     {

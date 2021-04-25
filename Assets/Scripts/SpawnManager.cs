@@ -15,10 +15,6 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(SpawnRoutine());
     }
     
-    void Update()
-    {
-        
-    }
     
     IEnumerator SpawnRoutine()
     {
