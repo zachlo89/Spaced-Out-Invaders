@@ -1,34 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class SpawnManager : MonoBehaviour
-{
-    [SerializeField] private GameObject _enemyPrefab;
-    [SerializeField] GameObject _enemyContainer;
-    
-    private bool _stopSpawning = false;
-
-    private GameObject _projectilePrefab;
-    void Start()
-    {
-        StartCoroutine(SpawnRoutine());
-    }
-    
-    
-    IEnumerator SpawnRoutine()
-    {
-        while (_stopSpawning == false)
-        {
-            Vector3 posToSpawn = new Vector3(Random.Range(-8f, 8f), 7, 0);
-            GameObject newEnemy = Instantiate(_enemyPrefab, posToSpawn, Quaternion.identity);
-            newEnemy.transform.parent = _enemyContainer.transform;
-            yield return new WaitForSeconds(5);
-        }
-    }
-
-    public void OnPlayerDeath()
-    {
-        _stopSpawning = true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5c206e718db76d10d13dbabc9a53d9aec18ea489b04db0fa5cc525f397ffe70f
+size 1413

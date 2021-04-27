@@ -1,18 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Laser : MonoBehaviour
-{
-    [SerializeField] private int _speed = 8;
-    
-    void Update()
-    {
-        transform.Translate(Vector3.up * _speed * Time.deltaTime);
-
-        if (transform.position.y >= 8)
-        {
-            Destroy(this.gameObject);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c146af79f6ed99765beda7807c6347a7923610ef838277b3a363c0800130dbab
+size 668
