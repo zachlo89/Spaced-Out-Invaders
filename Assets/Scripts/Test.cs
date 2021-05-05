@@ -1,21 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Test : MonoBehaviour
-{
-    
-    
-    public string myName = "Jack";
-    public int myAge = 30;
-    public float phoneBill = 45.89f;
-    public bool isEasy = false;
-    public int score = 30;
-    public int ammoCount = 100;
-
-    
-    
-    private string _yourName = "Kate";
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce080a17c5956a0d6179574f62633e54195fe2887e4638742ba525af310b6250
+size 448
